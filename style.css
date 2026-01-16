@@ -1,0 +1,364 @@
+:root {
+    --color-primary: #A4BC46;
+    --color-primary-hover: #8fa637;
+    --color-secondary: #FABE4C;
+    --color-background-light: #FFFBF0;
+    --color-text-dark: #363958;
+    --color-text-gray: #3E3E3E;
+    --color-text-main: #333;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+.dots {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 30vw;
+    top: -90px;
+    background: radial-gradient(circle, #ffe2aa 2px, transparent 3px);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+    z-index: 100;
+}
+
+header {
+    background-color: var(--color-background-light);
+    padding-bottom: 130px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 57px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    color: var(--color-text-main);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.logo img {
+    width: 55.94px;
+    height: 39.27;
+}
+
+.logo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.logo h2 span {
+    color: var(--color-primary);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.hero-section h1 {
+    font-family: 'bebas neue', sans-serif;
+    font-weight: 400px;
+    font-size: 80px;
+    color: var(--color-text-dark);
+}
+
+.hero-section .Lorem {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-text-gray);
+    margin-bottom: 10px;
+    max-width: 500px;
+    line-height: 26px;
+}
+
+.hero-content {
+    /* background-color: orange; */
+    padding-left: 24px;
+}
+
+.hero-section .hero-content .hero-text {
+    color: var(--color-secondary);
+}
+
+.hero-section .hero-image {
+    padding-right: 155px;
+}
+
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(var(--color-primary), var(--color-primary-hover));
+    color: var(--color-white);
+    width: 170px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 33px;
+    align-items: center;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0px 0px 0px;
+}
+
+button p {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+/* products */
+/* .woman-products{
+    background-color: yellow;
+
+} */
+.woman-products h2 {
+    font-family: 'bebas neue', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--color-text-dark);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-left: 135px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 135px;
+}
+
+.product-card {
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    width: 370px;
+    height: 550px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-card .image {
+    background-color: #F1F1F1;
+    height: 327px;
+    width: 334px;
+    border-radius: 10px;
+}
+
+.product-card .image img {
+    width: 250px;
+    height: 320px;
+    display: block;
+    margin: auto;
+    padding-top: 38px;
+}
+
+.product-card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: (--color-text-dark);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    margin-top: 17px;
+}
+
+.product-card p {
+    font-family: 'Roboto', sans-serif;
+    color: (--color-text-gray);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.product-card-content {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 23px;
+}
+
+.priceandbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.man-products h2 {
+    font-family: 'bebas neue', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--color-text-dark);
+    margin-bottom: 40px;
+    margin-top: 100px;
+    padding-left: 135px;
+}
+
+footer {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 83px;
+    padding: 100px 135px 175px 135px;
+    height: 750px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 25px;
+    height: 135px;
+    width: 489px;
+}
+
+.services img {
+    width: 80px;
+    height: 80px;
+}
+
+.shopping img {
+    height: 355px;
+    width: 599px;
+}
+
+.services div h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.services div p {
+    margin-top: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-gray);
+    line-height: 26px;
+    max-width: 300px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media (max-width: 376px) {
+    header {
+        padding: 20px 0px;
+        max-width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 37px;
+        height: 26px;
+    }
+
+    .logo h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 0px;
+        gap: 30px;
+    }
+    .hero-content{
+        padding: 0px;
+        /* text-align: center; */
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+        /* background-color: yellow; */
+        padding: 0px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+    }
+
+}
